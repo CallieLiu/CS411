@@ -1,25 +1,23 @@
 from typing import Optional
 
+from wildlife_tracker.habitat_management.habitat import Habitat
+
 class MigrationPath:
+    def __init__(self,
+                 destination: Habitat,
+                 path_id: int,
+                 species: str,
+                 start_location: Habitat,
+                 duration: Optional[int] = None) -> None:
+        self.destination = destination
+        self.path_id = path_id
+        self.species = species
+        self.start_location = start_location
+        self.duration = duration or []
+                 
 
-    def create_migration_path(species: str, start_location: Habitat, destination: Habitat, duration: Optional[int] = None) -> None:
-        pass
-
-    def get_migrations() -> list[Migration]:
-        pass
-
-    def get_migrations_by_current_location(current_location: str) -> list[Migration]:
-        pass
-
-    def get_migrations_by_migration_path(migration_path_id: int) -> list[Migration]:
-        pass
-
-    def get_migrations_by_start_date(start_date: str) -> list[Migration]:
-        pass
-
-    def get_migrations_by_status(status: str) -> list[Migration]:
+    def get_migration_path_details(path_id) -> dict:
         pass
 
     def update_migration_path_details(path_id: int, **kwargs) -> None:
         pass
-    
