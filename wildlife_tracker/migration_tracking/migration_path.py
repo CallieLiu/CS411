@@ -19,3 +19,7 @@ class MigrationPath:
 
     def get_migrations_by_status(status: str) -> list[Migration]:
         pass
+
+    def update_migration_path_details(path_id: int, **kwargs) -> None:
+        pass
+    

@@ -1,6 +1,6 @@
 from typing import Optional
 
-from CS411.wildlife_tracker.animal_managment.animal import Animal
+from wildlife_tracker.animal_management.animal import Animal
 
 class AnimalManager:
 
