@@ -16,8 +16,8 @@ class MigrationPath:
         self.duration = duration or []
                  
 
-    def get_migration_path_details(path_id) -> dict:
+    def get_migration_path_details(self, path_id) -> dict:
         pass
 
-    def update_migration_path_details(path_id: int, **kwargs) -> None:
+    def update_migration_path_details(self, path_id: int, **kwargs) -> None:
         pass

@@ -20,8 +20,8 @@ class Migration:
         self.status = status 
 
 
-    def get_migration_details(migration_id: int) -> dict[str, Any]:
+    def get_migration_details(self, migration_id: int) -> dict[str, Any]:
         pass
 
-    def update_migration_details(migration_id: int, **kwargs: Any) -> None:
+    def update_migration_details(self, migration_id: int, **kwargs: Any) -> None:
         pass
