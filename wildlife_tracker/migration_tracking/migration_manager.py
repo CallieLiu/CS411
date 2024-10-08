@@ -34,7 +34,7 @@ class MigrationManager:
     def get_migration_paths_by_start_location(self, start_location: Habitat) -> list[MigrationPath]:
         pass
 
-    def get_migrations(self ) -> list[Migration]:
+    def get_migrations(self) -> list[Migration]:
         pass
 
     def get_migrations_by_current_location(self, current_location: str) -> list[Migration]:
